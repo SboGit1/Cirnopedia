@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { MashComponent } from './mash/mash.component';
 import { NavigatebarComponent } from './navigatebar/navigatebar.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
         {
           path: 'profile',
           component: ProfileComponent
+        },
+        {
+          path: 'sign-up',
+          component: SignUpComponent
+        },
+        {
+          path: 'mash',
+          component: MashComponent
         },
     ]}
 ];

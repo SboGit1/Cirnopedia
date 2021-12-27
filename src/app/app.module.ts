@@ -13,13 +13,22 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MashComponent } from './mash/mash.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigatebarComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    SignUpComponent,
+    MashComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +39,12 @@ import { HomeComponent } from './home/home.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
